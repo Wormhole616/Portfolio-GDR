@@ -1,0 +1,143 @@
+/*the box layout for the entire website*/
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2px;
+    
+}
+
+/*designing the body layout */
+
+body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: rgb(60, 228, 220);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    text-decoration: none;
+    box-sizing: content-box;
+    margin-bottom: 2px;
+    height: 75px;
+    background-color: rgb(165, 165, 246);
+
+}
+/*defines the unlisted elements in the website*/
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    height: 40vh;
+    flex-grow: 1;
+    padding: 2px;
+    color: white;
+}
+
+
+
+
+
+
+.right-align {
+    display: flex;
+    align-items: bottom;
+    justify-content: right;
+    padding-right: 10%;
+}
+h1
+h2
+h3
+h4
+h5 {
+
+    display: flex;
+    position: left;
+    
+}
+main {
+    box-sizing: inherit;
+
+
+}
+
+#about-me {
+
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: content-box;
+    width: fit-content;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 30px;
+    height: 200px;
+    border-right: 5px solid rgb(81, 79, 79);
+
+
+}
+
+#Work {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: content-box;
+    width: fit-content;
+    margin-left: 151px;
+    margin-right: 50px;
+    margin-top: 30px;
+    height: 800px;
+    border-right: 5px solid rgb(81, 79, 79);
+}
+
+
+.contactme-section{
+    box-sizing: content-box;
+    display: flex;
+    width: 100%;
+    background-color: beige;
+    margin-right: 50px;
+
+}
+#Contact-Me {
+
+    display: flex;
+    box-sizing: inherit;
+    width: 20%
+    margin-top: 30px;
+    height: 200px;
+    border-left:5px solid gray;
+
+
+    
+
+}
+.contact-info {
+
+    display: flex;
+    position: right;
+}
+
+
+/*this is to make it adaptable to smaller screens */
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    header {
+      background: #772014;
+    }
+    nav,
+    footer {
+      background-color: #bb8588;
+    }

@@ -2,59 +2,89 @@
 
 * {
     box-sizing: border-box;
-    width: 100%;
-    padding: 2px;
-    
+    padding: 0px;
+    margin: 0px;
 }
 
 /*designing the body layout */
 
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
-    justify-content: flex-start;
-    background-color: rgb(60, 228, 220);
+    background-color: rgb(229, 214, 214);
+    
+
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: justify;
-    text-decoration: none;
     box-sizing: content-box;
     margin-bottom: 2px;
     height: 75px;
-    background-color: rgb(165, 165, 246);
+    background-color: rgb(157, 157, 160);
 
 }
 /*defines the unlisted elements in the website*/
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    font-size: 20px;
+    background-color: grey;
+}
+
+#header_name{
+
+    height: 50px;
+    width: 300px;
+    background-color: rgb(215, 196, 196);
+    color: rgb(17, 3, 3);
+}
+ nav ul {
+    height: 100%;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: underline;
+    text-decoration-color: white;
+
+}
 
 nav ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-decoration: none;
-    height: 40vh;
     flex-grow: 1;
     padding: 2px;
     color: white;
+    font-size: medium;
 }
 
 
 
-
-
-
-.right-align {
+.mid {
     display: flex;
-    align-items: bottom;
-    justify-content: right;
-    padding-right: 10%;
+    height: 150px;
+    padding: 10px;
+    background-image: url('./images/Section_background.jpg');
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.mid_box{
+    height 100px;
+    width: 400px;
+    color: white;
+    /* border-color: gray;
+    border: solid; */
+    font-size: large;
+    padding: 50px;
+  
+}
+
+
+
+
 h1
 h2
 h3
@@ -67,77 +97,215 @@ h5 {
 }
 main {
     box-sizing: inherit;
+   
 
 
 }
 
-#about-me {
+
+.section-about-me{
 
     display: flex;
-    justify-content: flex-start;
-    box-sizing: content-box;
-    width: fit-content;
+    justify-content: left;
+    height: 300px;
+    
+}
+#about-me {
+    
     margin-left: 100px;
     margin-right: 50px;
     margin-top: 30px;
-    height: 200px;
     border-right: 5px solid rgb(81, 79, 79);
+    font-size: 30px;
+    
 
 
 }
 
-#Work {
+#about {
     display: flex;
-    justify-content: flex-start;
-    box-sizing: content-box;
+    align-items: center;
+    width: 800px;
+    margin-left: 400px;
+    color: white;
+    margin: 50px;
+    align-content:space-around ;
+}
+
+.work-section {
+    display: flex;
+    
+    
+}
+
+#Work {
+ 
     width: fit-content;
     margin-left: 151px;
     margin-right: 50px;
     margin-top: 30px;
     height: 800px;
     border-right: 5px solid rgb(81, 79, 79);
+    font-size: 42px;
 }
 
-
-.contactme-section{
-    box-sizing: content-box;
+showcase {
     display: flex;
-    width: 100%;
-    background-color: beige;
-    margin-right: 50px;
-
-}
-#Contact-Me {
-
-    display: flex;
-    box-sizing: inherit;
-    width: 20%
-    margin-top: 30px;
-    height: 200px;
-    border-left:5px solid gray;
-
-
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around ;
+    margin: auto;
+    margin-top: 50px;
     
 
 }
-.contact-info {
+#box1_work {
+   
+    height: 400px;
+    width: 1100px;
+    margin-right: 100px;
+   vertical-align: auto;
+    border:grey 15px;
+    background-image: url('./images/porsche.jpg');
+    background-position: center;
+    color: white;
+    border: solid 2px;
+    border-color: white;
+   
 
+}
+
+#mywork1 {
+    height: 50px;
+    width: 200px;
+    margin-top: 20%;
+    background-color: gray;
+    color: white;
+   
+    
+}
+
+#box2_work {
+
+    height: 300px;
+    width: 500px;
+    margin-left: 125px;
+    border:solid 2px;
+    vertical-align: bottom;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 70px;
+    border: solid 2px;
+    border-color: white;
+    background-image: url('./images/Galaxy.jpg');
+    background-position: center;
+    background-size: 80%;
+
+
+}
+
+#mywork2 {
+    
+        height: 50px;
+        width: 200px;
+        margin-top: 20%;
+        background-color: gray;
+        color: white;
+       
+        
+    
+}
+
+#box3_work {
+
+    height: 300px;
+    width: 450px;
+    margin-right: 225px;
+    border:solid 2px;
+    vertical-align: bottom;
+    padding: 20px;
+    margin-top: 20px;
+    border: solid 2px;
+    border-color: white;
+    background-image: url('/assets/images/Blue_flame.png');
+    background-position: center;
+    background-size: 80%;
+    
+    }
+    
+
+#mywork3 {
+    height: 50px;
+        width: 200px;
+        margin-top: 20%;
+        background-color: gray;
+        color: white;
+}
+    
+
+.contactme-section {
+   
     display: flex;
-    position: right;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+    margin-right: 50px;
+
+}
+
+#contactMe{
+
+    margin-left: 80px;
+    margin-right: 50px;
+    margin-top: 30px;
+    border-right: 5px solid rgb(81, 79, 79);
+    font-size: 42px;
+    
+
+}
+
+div ul li {
+    flex-grow: 1;
+    padding: 2px;
+    color: white;
+    font-size: medium;
+    
+
+}
+
+div ul {
+    height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: underline;
+    text-decoration-color: white;
+    margin-top: 50px;
+
+}
+ a:hover{
+
+    color: white;
+}
+
+div:hover {
+  filter: opacity(0.80);
 }
 
 
-/*this is to make it adaptable to smaller screens */
+
+this is to make it adaptable to smaller screens */
 
 @media screen and (max-width: 768px) {
     main,
     nav {
       flex-direction: column;
     }
-    header {
-      background: #772014;
+   
     }
     nav,
     footer {
       background-color: #bb8588;
     }
+}

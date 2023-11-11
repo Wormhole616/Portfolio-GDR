@@ -134,6 +134,8 @@ main {
 
 .work-section {
     display: flex;
+    flex-direction: row;
+    align-content: center;
     
     
 }
@@ -188,7 +190,7 @@ showcase {
 #box2_work {
 
     height: 300px;
-    width: 500px;
+    width: 400px;
     margin-left: 125px;
     border:solid 2px;
     vertical-align: bottom;

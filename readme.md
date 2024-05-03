@@ -15,7 +15,7 @@ Why did I build the project?
 What did it solve
    By designing your portfolio, you can define your unique brand. The layout, color scheme, and overall aesthetic reflect your style and professionalism. It’s an opportunity to leave a lasting impression on visitors
 
-    What did I learn
+    What did I learn?
         I is more than just a collection of projects—it’s a reflection of your passion, dedication, and expertise. Plus working with CSS can be estresfull--but only with practice you learn to have fun!
 
 
